@@ -10,13 +10,19 @@ function main() {
         }
 
     }
-
-
-
-}
-
-console.log(greater);
+console.log(greater); // These statements needed to be inside main() otherwise was outside of scope
 console.log('works');
+
+
 }
+
+
+// Extra curly brace was causing it to break
 main();
 
+/*
+	KEY: Close but no cigar. Extra brace and out of scope access to 'greater' were all that was wrong.
+
+	Hair on point though :-P
+
+*/
